@@ -70,7 +70,8 @@ export default function Index() {
               <button
                 onClick={handleOpenPortfolio}
                 disabled={isFlipping}
-                className="relative px-8 py-3 text-charcoal-900 font-semibold tracking-widest text-sm bg-gold-500 hover:bg-gold-600 active:bg-gold-700 disabled:opacity-70 disabled:cursor-not-allowed transition-colors duration-300 rounded-sm shadow-lg overflow-hidden group"
+                type="button"
+                className="relative px-8 py-3 text-charcoal-900 font-semibold tracking-widest text-sm bg-gold-500 hover:bg-gold-600 active:bg-gold-700 disabled:opacity-70 disabled:cursor-not-allowed transition-colors duration-300 rounded-sm shadow-lg overflow-hidden group cursor-pointer z-20"
               >
                 <div className="absolute inset-0 bg-gold-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 pointer-events-none" />
                 <span className="relative z-10 uppercase">Open Portfolio</span>
