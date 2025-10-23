@@ -6,10 +6,11 @@ export default function Index() {
   const [isFlipping, setIsFlipping] = useState(false);
 
   const handleOpenPortfolio = () => {
+    console.log("Button clicked!");
     setIsFlipping(true);
     setTimeout(() => {
       navigate("/portfolio");
-    }, 600);
+    }, 1200);
   };
 
   return (
