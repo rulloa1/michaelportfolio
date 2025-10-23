@@ -22,7 +22,8 @@ const NotFound = () => {
           Page Not Found
         </p>
         <p className="text-charcoal-600 mb-8 max-w-md mx-auto font-light">
-          It seems you've ventured into unexplored territory. Let's get you back to the main portfolio.
+          It seems you've ventured into unexplored territory. Let's get you back
+          to the main portfolio.
         </p>
         <a
           href="/"

@@ -50,7 +50,9 @@ export default function Index() {
 
               {/* Name */}
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight font-display">
-                MICHAEL<br />CHANDLER
+                MICHAEL
+                <br />
+                CHANDLER
               </h1>
 
               {/* Divider */}
@@ -59,7 +61,9 @@ export default function Index() {
               {/* Tagline */}
               <p className="text-base md:text-lg text-charcoal-200 font-light tracking-wide max-w-xs mb-16 font-sans">
                 High-End Construction &<br />
-                <span className="text-gold-500">Bespoke Building Solutions</span>
+                <span className="text-gold-500">
+                  Bespoke Building Solutions
+                </span>
               </p>
 
               {/* CTA Button */}

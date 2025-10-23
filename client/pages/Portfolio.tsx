@@ -13,43 +13,55 @@ const PROJECTS: Project[] = [
   {
     id: 1,
     title: "Modern Lakeside Estate",
-    description: "A stunning 12,000 sq ft lakeside residence featuring floor-to-ceiling windows, natural stone accents, and sustainable design elements.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+    description:
+      "A stunning 12,000 sq ft lakeside residence featuring floor-to-ceiling windows, natural stone accents, and sustainable design elements.",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
     category: "Residential",
   },
   {
     id: 2,
     title: "Urban Commercial Plaza",
-    description: "Contemporary multi-story commercial complex with integrated retail spaces, restaurants, and office suites. Award-winning architectural design.",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop",
+    description:
+      "Contemporary multi-story commercial complex with integrated retail spaces, restaurants, and office suites. Award-winning architectural design.",
+    image:
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop",
     category: "Commercial",
   },
   {
     id: 3,
     title: "Coastal Luxury Retreat",
-    description: "Exclusive beachfront property with infinity pools, outdoor entertainment areas, and premium finishes throughout.",
-    image: "https://images.unsplash.com/photo-1570129477492-45efb5deb10f?w=800&h=600&fit=crop",
+    description:
+      "Exclusive beachfront property with infinity pools, outdoor entertainment areas, and premium finishes throughout.",
+    image:
+      "https://images.unsplash.com/photo-1570129477492-45efb5deb10f?w=800&h=600&fit=crop",
     category: "Residential",
   },
   {
     id: 4,
     title: "Innovation Tech Campus",
-    description: "State-of-the-art technology campus featuring collaborative workspaces, cutting-edge facilities, and sustainable architecture.",
-    image: "https://images.unsplash.com/photo-1577720643272-265f434ef0ac?w=800&h=600&fit=crop",
+    description:
+      "State-of-the-art technology campus featuring collaborative workspaces, cutting-edge facilities, and sustainable architecture.",
+    image:
+      "https://images.unsplash.com/photo-1577720643272-265f434ef0ac?w=800&h=600&fit=crop",
     category: "Commercial",
   },
   {
     id: 5,
     title: "Mountain Lodge Sanctuary",
-    description: "Rustic yet refined alpine lodge with locally-sourced materials, panoramic views, and luxurious amenities.",
-    image: "https://images.unsplash.com/photo-1554436629-51d7a1c8aaae?w=800&h=600&fit=crop",
+    description:
+      "Rustic yet refined alpine lodge with locally-sourced materials, panoramic views, and luxurious amenities.",
+    image:
+      "https://images.unsplash.com/photo-1554436629-51d7a1c8aaae?w=800&h=600&fit=crop",
     category: "Residential",
   },
   {
     id: 6,
     title: "Heritage Restoration Project",
-    description: "Meticulous restoration of a historic property preserving original character while integrating modern luxury and functionality.",
-    image: "https://images.unsplash.com/photo-1512207736139-c3bab6f7e00b?w=800&h=600&fit=crop",
+    description:
+      "Meticulous restoration of a historic property preserving original character while integrating modern luxury and functionality.",
+    image:
+      "https://images.unsplash.com/photo-1512207736139-c3bab6f7e00b?w=800&h=600&fit=crop",
     category: "Restoration",
   },
 ];
@@ -82,8 +94,9 @@ export default function Portfolio() {
             Portfolio Collection
           </h1>
           <p className="text-charcoal-300 text-base md:text-lg max-w-2xl font-light">
-            Explore our curated selection of premium construction and design projects, 
-            each representing our commitment to excellence and innovation.
+            Explore our curated selection of premium construction and design
+            projects, each representing our commitment to excellence and
+            innovation.
           </p>
         </div>
       </div>
@@ -164,9 +177,7 @@ export default function Portfolio() {
           {/* Modal Container */}
           <div
             className={`relative max-w-4xl w-full transform transition-all duration-300 ${
-              isClosing
-                ? "scale-95 opacity-0"
-                : "scale-100 opacity-100"
+              isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
             }`}
             onClick={(e) => e.stopPropagation()}
           >
@@ -186,7 +197,7 @@ export default function Portfolio() {
                 alt={selectedProject.title}
                 className="w-full h-auto object-cover"
               />
-              
+
               {/* Top-right accent */}
               <div className="absolute top-4 right-4 px-4 py-2 rounded-sm bg-gold-500/90 backdrop-blur-sm">
                 <span className="text-charcoal-900 text-xs font-semibold tracking-widest uppercase">
