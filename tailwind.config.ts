@@ -47,6 +47,30 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gold: {
+          50: "hsl(45, 100%, 96%)",
+          100: "hsl(45, 100%, 91%)",
+          200: "hsl(45, 97%, 83%)",
+          300: "hsl(45, 97%, 74%)",
+          400: "hsl(45, 96%, 56%)",
+          500: "hsl(45, 93%, 47%)",
+          600: "hsl(35, 88%, 40%)",
+          700: "hsl(35, 87%, 33%)",
+          800: "hsl(30, 83%, 28%)",
+          900: "hsl(25, 80%, 14%)",
+        },
+        charcoal: {
+          50: "hsl(210, 17%, 98%)",
+          100: "hsl(210, 17%, 95%)",
+          200: "hsl(210, 16%, 90%)",
+          300: "hsl(210, 14%, 83%)",
+          400: "hsl(210, 12%, 60%)",
+          500: "hsl(210, 11%, 45%)",
+          600: "hsl(210, 12%, 32%)",
+          700: "hsl(210, 14%, 20%)",
+          800: "hsl(210, 17%, 12%)",
+          900: "hsl(210, 20%, 5%)",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -80,10 +104,35 @@ export default {
             height: "0",
           },
         },
+        "book-flip": {
+          "0%": {
+            transform: "rotateY(0deg)",
+          },
+          "100%": {
+            transform: "rotateY(180deg)",
+          },
+        },
+        "book-flip-reverse": {
+          "0%": {
+            transform: "rotateY(180deg)",
+          },
+          "100%": {
+            transform: "rotateY(0deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "book-flip": "book-flip 1.2s ease-in-out forwards",
+        "book-flip-reverse": "book-flip-reverse 1.2s ease-in-out forwards",
+      },
+      transformStyle: {
+        "3d": "preserve-3d",
+      },
+      perspective: {
+        1000: "1000px",
+        1200: "1200px",
       },
     },
   },
