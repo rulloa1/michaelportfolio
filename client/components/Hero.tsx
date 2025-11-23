@@ -37,10 +37,10 @@ export default function Hero() {
         <div className="container mx-auto px-6">
           <h1
             ref={titleRef}
-            className="text-[120px] md:text-[180px] lg:text-[240px] font-serif font-bold text-gold-400 text-center leading-none"
+            className="text-[60px] md:text-[100px] lg:text-[140px] font-serif font-bold text-gold-400 text-center leading-none"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Portfolio
+            Michael Chandler
           </h1>
         </div>
       </div>
