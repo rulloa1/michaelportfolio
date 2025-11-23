@@ -8,51 +8,75 @@ import {
 const services = [
   {
     number: "01",
-    title: "Architecture",
-    description: "I design buildings that are purposeful, enduring, and deeply connected to their surroundings.",
+    title: "Planning & Feasibility",
+    description: "Strategic planning to ensure project viability from concept to completion.",
     features: [
-      "Concept Design",
-      "Architectural Planning",
-      "3D Visualization & Modeling",
-      "Construction Documentation"
+      "Feasibility Studies",
+      "Site Analysis",
+      "Permitting & Entitlements",
+      "Financial Planning"
     ],
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831"
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/bigsur-cover.jpg"
   },
   {
     number: "02",
-    title: "Interior Design",
-    description: "Beyond surface-level styling, I craft interiors that feel as good as they look.",
+    title: "Design",
+    description: "Comprehensive design solutions that bring your vision to life.",
     features: [
-      "Spatial Identity",
-      "Material & Finish Selection",
-      "Furniture & Lighting Design",
-      "Detail Development"
+      "Architectural Design",
+      "Interior Design",
+      "Landscape Design",
+      "3D Visualization"
     ],
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2800"
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-knolls-cover.jpg"
   },
   {
     number: "03",
-    title: "Layout Planning",
-    description: "I organize environments around people, movement, and use, creating clarity, comfort, and adaptability.",
+    title: "Construction",
+    description: "Expert execution and quality craftsmanship on every project.",
     features: [
-      "Functional Zoning",
-      "Human-Centered Design",
-      "Circulation Strategy",
-      "Flexibility & Future Use"
+      "Ground-Up Construction",
+      "Renovations & Remodels",
+      "Structural Work",
+      "Finish Carpentry"
     ],
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053"
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/syracuse-1.jpg"
   },
   {
     number: "04",
     title: "Project Management",
-    description: "I ensure your vision is delivered on time, on budget, and to the highest standards.",
+    description: "Seamless coordination from start to finish ensuring on-time, on-budget delivery.",
     features: [
-      "Timeline Planning",
-      "Stakeholder Coordination",
-      "Quality Control",
-      "Budget & Timeline Tracking"
+      "Schedule Management",
+      "Budget Control",
+      "Vendor Coordination",
+      "Progress Reporting"
     ],
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070"
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/alpine-ranch-cover.jpg"
+  },
+  {
+    number: "05",
+    title: "Quality Assurance",
+    description: "Rigorous standards and inspections to ensure excellence in every detail.",
+    features: [
+      "Quality Control",
+      "Safety Compliance",
+      "Code Compliance",
+      "Final Inspections"
+    ],
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/miami-beach-cover.jpg"
+  },
+  {
+    number: "06",
+    title: "Sustainability",
+    description: "Environmentally responsible practices for a greener future.",
+    features: [
+      "Green Building",
+      "Energy Efficiency",
+      "Sustainable Materials",
+      "LEED Consulting"
+    ],
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/pool-design-cover.jpg"
   }
 ];
 
