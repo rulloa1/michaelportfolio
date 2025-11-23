@@ -12,57 +12,111 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "Modern Lakeside Estate",
+    title: "S. Florida High Rise Luxe Condo",
     description:
-      "A stunning 12,000 sq ft lakeside residence featuring floor-to-ceiling windows, natural stone accents, and sustainable design elements.",
+      "4,200 sq ft beachfront condo renovation featuring ocean views, Italian marble, smart home integration, and professional kitchen.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/miami-beach-cover.jpg",
     category: "Residential",
   },
   {
     id: 2,
-    title: "Urban Commercial Plaza",
+    title: "High Alpine Mountain Ranch",
     description:
-      "Contemporary multi-story commercial complex with integrated retail spaces, restaurants, and office suites. Award-winning architectural design.",
+      "8,500 sq ft luxury ranch with exposed timber, custom stone, vaulted ceilings, and mountain panoramas.",
     image:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop",
-    category: "Commercial",
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/alpine-ranch-cover.jpg",
+    category: "Residential",
   },
   {
     id: 3,
-    title: "Coastal Luxury Retreat",
+    title: "Syracuse House Craftsman Estate",
     description:
-      "Exclusive beachfront property with infinity pools, outdoor entertainment areas, and premium finishes throughout.",
+      "6,200 sq ft craftsman-style estate with 400 tons of decorative stone, native plantings, and two-acre landscaping.",
     image:
-      "https://images.unsplash.com/photo-1570129477492-45efb5deb10f?w=800&h=600&fit=crop",
-    category: "Residential",
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/syracuse-1.jpg",
+    category: "Design/Build",
   },
   {
     id: 4,
-    title: "Innovation Tech Campus",
+    title: "Mountain Mid-Rise Luxe Condo",
     description:
-      "State-of-the-art technology campus featuring collaborative workspaces, cutting-edge facilities, and sustainable architecture.",
+      "2,800 sq ft condo featuring spa bathrooms, Calacatta marble, walnut accents, and heated floors.",
     image:
-      "https://images.unsplash.com/photo-1577720643272-265f434ef0ac?w=800&h=600&fit=crop",
-    category: "Commercial",
-  },
-  {
-    id: 5,
-    title: "Mountain Lodge Sanctuary",
-    description:
-      "Rustic yet refined alpine lodge with locally-sourced materials, panoramic views, and luxurious amenities.",
-    image:
-      "https://images.unsplash.com/photo-1554436629-51d7a1c8aaae?w=800&h=600&fit=crop",
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/montana-cover.jpg",
     category: "Residential",
   },
   {
-    id: 6,
-    title: "Heritage Restoration Project",
+    id: 5,
+    title: "Ultra Luxe Private Club Resort Pool",
     description:
-      "Meticulous restoration of a historic property preserving original character while integrating modern luxury and functionality.",
+      "3-acre amenity featuring 4,500 sq ft pool, swim-up bar, pool houses, fire pits, and outdoor kitchen.",
     image:
-      "https://images.unsplash.com/photo-1512207736139-c3bab6f7e00b?w=800&h=600&fit=crop",
-    category: "Restoration",
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/pool-design-cover.jpg",
+    category: "Hospitality",
+  },
+  {
+    id: 6,
+    title: "South Coast Complete Remodel",
+    description:
+      "3,800 sq ft residence with panoramic ocean views, white oak flooring, gourmet kitchen, and spa bathrooms.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/southcoast-cover.jpg",
+    category: "Design/Build",
+  },
+  {
+    id: 7,
+    title: "Carmel Valley Custom Residence",
+    description:
+      "4,800 sq ft custom residence with exposed steel beams, floor-to-ceiling glass, and native habitat restoration.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-valley-new-cover.jpg",
+    category: "Design/Build",
+  },
+  {
+    id: 8,
+    title: "North Florida Renovation/Addition",
+    description:
+      "3,600 sq ft home with 1,200 sq ft addition including new roof, impact windows, and updated systems.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/north-florida-cover.jpg",
+    category: "Residential",
+  },
+  {
+    id: 9,
+    title: "Abaco Luxe Boat House",
+    description:
+      "1,800 sq ft luxury boat house with hurricane-resistant construction and mahogany millwork.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/abaco-luxe-boathouse-cover.jpg",
+    category: "Residential",
+  },
+  {
+    id: 10,
+    title: "Coastal Mountain Residence",
+    description:
+      "1.2-acre mountain site with 3,000 cubic yards earth movement, 320 linear feet retaining walls, 900 sq ft garage.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/bigsur-cover.jpg",
+    category: "Civil",
+  },
+  {
+    id: 11,
+    title: "Carmel Knolls Transformation",
+    description:
+      "2,200 sq ft complete renovation with new roofline, 18 energy-efficient windows, 1,400 sq ft composite decking.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-knolls-cover.jpg",
+    category: "Civil",
+  },
+  {
+    id: 12,
+    title: "Laguna Grande Spanish Revival",
+    description:
+      "12,000 sq ft commercial complex featuring clay roof tiles, ironwork, arched colonnades, balancing tradition with modern function.",
+    image:
+      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/laguna-grande-cover.jpg",
+    category: "Commercial",
   },
 ];
 

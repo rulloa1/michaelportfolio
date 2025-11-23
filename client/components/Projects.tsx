@@ -1,27 +1,27 @@
 const projects = [
   {
-    title: "Modern Lakeside Estate",
-    location: "Lake District",
-    category: "Residential",
+    title: "S. Florida High Rise Luxe Condo",
+    location: "S. Florida",
+    category: "Residential Construction",
     year: "2024",
-    description: "A contemporary waterfront residence blending modern architecture with natural surroundings, featuring floor-to-ceiling windows and sustainable design principles.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075"
+    description: "4,200 sq ft beachfront condo renovation featuring ocean views, Italian marble, smart home integration, and professional kitchen. Completed in 14 months.",
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/miami-beach-cover.jpg"
   },
   {
-    title: "Urban Commercial Plaza",
-    location: "Downtown",
-    category: "Commercial",
+    title: "High Alpine Mountain Ranch",
+    location: "Montana",
+    category: "Residential Construction",
     year: "2024",
-    description: "A mixed-use development combining retail, office, and public spaces in a vibrant urban setting with innovative architectural solutions.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070"
+    description: "8,500 sq ft luxury ranch with exposed timber, custom stone, vaulted ceilings, and mountain panoramas. Completed in 24 months.",
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/alpine-ranch-cover.jpg"
   },
   {
-    title: "Coastal Luxury Retreat",
-    location: "Malibu",
-    category: "Residential",
+    title: "Syracuse House Craftsman Estate",
+    location: "N. Utah",
+    category: "Design/Build",
     year: "2023",
-    description: "An exclusive beachfront property featuring expansive ocean views, minimalist design, and seamless indoor-outdoor living spaces.",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071"
+    description: "6,200 sq ft craftsman-style estate with 400 tons of decorative stone, native plantings, and two-acre landscaping. Completed in 18 months.",
+    image: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/syracuse-1.jpg"
   }
 ];
 
