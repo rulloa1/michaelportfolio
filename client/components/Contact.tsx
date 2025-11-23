@@ -136,9 +136,9 @@ export default function Contact() {
             <div>
               <h3 className="text-lg font-bold text-charcoal-900 mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li><a href="mailto:contact@portfolio.com" className="text-charcoal-600 hover:text-gold-600 transition-colors">contact@portfolio.com</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-gold-600 transition-colors">Twitter</a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-gold-600 transition-colors">LinkedIn</a></li>
+                <li><a href="tel:+14352377373" className="text-charcoal-600 hover:text-gold-600 transition-colors">+1 (435) 237-7373</a></li>
+                <li><a href="mailto:mike.rcccon@yahoo.com" className="text-charcoal-600 hover:text-gold-600 transition-colors">mike.rcccon@yahoo.com</a></li>
+                <li><span className="text-charcoal-600">Spring, Texas</span></li>
               </ul>
             </div>
 
@@ -169,7 +169,7 @@ export default function Contact() {
               <a href="#" className="hover:text-gold-600 transition-colors">Terms of Service</a>
             </div>
             <div>
-              <p>&copy; {new Date().getFullYear()} Architecture Portfolio. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Michael Chandler Fine Construction & Design. All rights reserved.</p>
             </div>
           </div>
         </footer>
