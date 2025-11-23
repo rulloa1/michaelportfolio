@@ -4,28 +4,53 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 const galleryImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070",
-    alt: "Architecture detail"
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/miami-beach-cover.jpg",
+    alt: "S. Florida High Rise Luxe Condo"
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070",
-    alt: "Modern interior"
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/alpine-ranch-cover.jpg",
+    alt: "High Alpine Mountain Ranch"
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070",
-    alt: "Exterior view"
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/syracuse-1.jpg",
+    alt: "Syracuse House Craftsman Estate"
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?q=80&w=2070",
-    alt: "Architectural design"
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/montana-cover.jpg",
+    alt: "Mountain Mid-Rise Luxe Condo"
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070",
-    alt: "Building facade"
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/pool-design-cover.jpg",
+    alt: "Ultra Luxe Private Club Resort Pool"
+  },
+  {
+    id: 6,
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/southcoast-cover.jpg",
+    alt: "South Coast Complete Remodel"
+  },
+  {
+    id: 7,
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/bigsur-cover.jpg",
+    alt: "Coastal Mountain Residence"
+  },
+  {
+    id: 8,
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-knolls-cover.jpg",
+    alt: "Carmel Knolls Transformation"
+  },
+  {
+    id: 9,
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/laguna-grande-cover.jpg",
+    alt: "Laguna Grande Spanish Revival"
+  },
+  {
+    id: 10,
+    url: "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/abaco-luxe-boathouse-cover.jpg",
+    alt: "Abaco Luxe Boat House"
   }
 ];
 
