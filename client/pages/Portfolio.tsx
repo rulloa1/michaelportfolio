@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 interface Project {
   id: number;
@@ -7,7 +7,10 @@ interface Project {
   description: string;
   image: string;
   category: string;
+  gallery: string[];
 }
+
+const BASE_URL = "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects";
 
 const PROJECTS: Project[] = [
   {
@@ -15,121 +18,204 @@ const PROJECTS: Project[] = [
     title: "S. Florida High Rise Luxe Condo",
     description:
       "4,200 sq ft beachfront condo renovation featuring ocean views, Italian marble, smart home integration, and professional kitchen.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/miami-beach-cover.jpg",
+    image: `${BASE_URL}/miami-beach-cover.jpg`,
     category: "Residential",
+    gallery: [
+      `${BASE_URL}/miami-beach-cover.jpg`,
+      `${BASE_URL}/miami-beach-1.jpg`,
+      `${BASE_URL}/miami-beach-2.jpg`,
+      `${BASE_URL}/miami-beach-3.jpg`,
+    ],
   },
   {
     id: 2,
     title: "High Alpine Mountain Ranch",
     description:
       "8,500 sq ft luxury ranch with exposed timber, custom stone, vaulted ceilings, and mountain panoramas.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/alpine-ranch-cover.jpg",
+    image: `${BASE_URL}/alpine-ranch-cover.jpg`,
     category: "Residential",
+    gallery: [
+      `${BASE_URL}/alpine-ranch-cover.jpg`,
+      `${BASE_URL}/alpine-ranch-1.jpg`,
+      `${BASE_URL}/alpine-ranch-2.jpg`,
+      `${BASE_URL}/alpine-ranch-3.jpg`,
+      `${BASE_URL}/alpine-ranch-4.jpg`,
+    ],
   },
   {
     id: 3,
     title: "Syracuse House Craftsman Estate",
     description:
       "6,200 sq ft craftsman-style estate with 400 tons of decorative stone, native plantings, and two-acre landscaping.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/syracuse-1.jpg",
+    image: `${BASE_URL}/syracuse-1.jpg`,
     category: "Design/Build",
+    gallery: [
+      `${BASE_URL}/syracuse-1.jpg`,
+      `${BASE_URL}/syracuse-2.jpg`,
+      `${BASE_URL}/syracuse-3.jpg`,
+      `${BASE_URL}/syracuse-4.jpg`,
+    ],
   },
   {
     id: 4,
     title: "Mountain Mid-Rise Luxe Condo",
     description:
       "2,800 sq ft condo featuring spa bathrooms, Calacatta marble, walnut accents, and heated floors.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/montana-cover.jpg",
+    image: `${BASE_URL}/montana-cover.jpg`,
     category: "Residential",
+    gallery: [
+      `${BASE_URL}/montana-cover.jpg`,
+      `${BASE_URL}/montana-1.jpg`,
+      `${BASE_URL}/montana-2.jpg`,
+      `${BASE_URL}/montana-3.jpg`,
+    ],
   },
   {
     id: 5,
     title: "Ultra Luxe Private Club Resort Pool",
     description:
       "3-acre amenity featuring 4,500 sq ft pool, swim-up bar, pool houses, fire pits, and outdoor kitchen.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/pool-design-cover.jpg",
+    image: `${BASE_URL}/pool-design-cover.jpg`,
     category: "Hospitality",
+    gallery: [
+      `${BASE_URL}/pool-design-cover.jpg`,
+      `${BASE_URL}/pool-design-1.jpg`,
+      `${BASE_URL}/pool-design-2.jpg`,
+      `${BASE_URL}/pool-design-3.jpg`,
+    ],
   },
   {
     id: 6,
     title: "South Coast Complete Remodel",
     description:
       "3,800 sq ft residence with panoramic ocean views, white oak flooring, gourmet kitchen, and spa bathrooms.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/southcoast-cover.jpg",
+    image: `${BASE_URL}/southcoast-cover.jpg`,
     category: "Design/Build",
+    gallery: [
+      `${BASE_URL}/southcoast-cover.jpg`,
+      `${BASE_URL}/southcoast-2.jpg`,
+      `${BASE_URL}/southcoast-3.jpg`,
+      `${BASE_URL}/southcoast-4.jpg`,
+    ],
   },
   {
     id: 7,
     title: "Carmel Valley Custom Residence",
     description:
       "4,800 sq ft custom residence with exposed steel beams, floor-to-ceiling glass, and native habitat restoration.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-valley-new-cover.jpg",
+    image: `${BASE_URL}/carmel-valley-new-cover.jpg`,
     category: "Design/Build",
+    gallery: [
+      `${BASE_URL}/carmel-valley-new-cover.jpg`,
+      `${BASE_URL}/carmel-valley-new-1.jpg`,
+      `${BASE_URL}/carmel-valley-new-2.jpg`,
+    ],
   },
   {
     id: 8,
     title: "North Florida Renovation/Addition",
     description:
       "3,600 sq ft home with 1,200 sq ft addition including new roof, impact windows, and updated systems.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/north-florida-cover.jpg",
+    image: `${BASE_URL}/north-florida-cover.jpg`,
     category: "Residential",
+    gallery: [
+      `${BASE_URL}/north-florida-cover.jpg`,
+      `${BASE_URL}/north-florida-1.jpg`,
+      `${BASE_URL}/north-florida-2.jpg`,
+      `${BASE_URL}/north-florida-3.jpg`,
+    ],
   },
   {
     id: 9,
     title: "Abaco Luxe Boat House",
     description:
       "1,800 sq ft luxury boat house with hurricane-resistant construction and mahogany millwork.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/abaco-luxe-boathouse-cover.jpg",
+    image: `${BASE_URL}/abaco-luxe-boathouse-cover.jpg`,
     category: "Residential",
+    gallery: [
+      `${BASE_URL}/abaco-luxe-boathouse-cover.jpg`,
+      `${BASE_URL}/abaco-luxe-boathouse-1.jpg`,
+    ],
   },
   {
     id: 10,
     title: "Coastal Mountain Residence",
     description:
       "1.2-acre mountain site with 3,000 cubic yards earth movement, 320 linear feet retaining walls, 900 sq ft garage.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/bigsur-cover.jpg",
+    image: `${BASE_URL}/bigsur-cover.jpg`,
     category: "Civil",
+    gallery: [
+      `${BASE_URL}/bigsur-cover.jpg`,
+      `${BASE_URL}/bigsur-1.jpg`,
+      `${BASE_URL}/bigsur-2.jpg`,
+      `${BASE_URL}/bigsur-3.jpg`,
+    ],
   },
   {
     id: 11,
     title: "Carmel Knolls Transformation",
     description:
       "2,200 sq ft complete renovation with new roofline, 18 energy-efficient windows, 1,400 sq ft composite decking.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/carmel-knolls-cover.jpg",
+    image: `${BASE_URL}/carmel-knolls-cover.jpg`,
     category: "Civil",
+    gallery: [
+      `${BASE_URL}/carmel-knolls-cover.jpg`,
+      `${BASE_URL}/carmel-knolls-1.jpg`,
+      `${BASE_URL}/carmel-knolls-2.jpg`,
+      `${BASE_URL}/carmel-knolls-3.jpg`,
+    ],
   },
   {
     id: 12,
     title: "Laguna Grande Spanish Revival",
     description:
       "12,000 sq ft commercial complex featuring clay roof tiles, ironwork, arched colonnades, balancing tradition with modern function.",
-    image:
-      "https://raw.githubusercontent.com/rulloa1/constructiondesignnew-e33525f5/main/src/assets/projects/laguna-grande-cover.jpg",
+    image: `${BASE_URL}/laguna-grande-cover.jpg`,
     category: "Commercial",
+    gallery: [
+      `${BASE_URL}/laguna-grande-cover.jpg`,
+      `${BASE_URL}/laguna-1.jpg`,
+      `${BASE_URL}/laguna-2.jpg`,
+      `${BASE_URL}/laguna-3.jpg`,
+    ],
   },
 ];
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isClosing, setIsClosing] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
       setSelectedProject(null);
       setIsClosing(false);
+      setShowGallery(false);
+      setCurrentImageIndex(0);
     }, 300);
+  };
+
+  const openGallery = () => {
+    setShowGallery(true);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    if (selectedProject) {
+      setCurrentImageIndex((prev) =>
+        prev === selectedProject.gallery.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedProject) {
+      setCurrentImageIndex((prev) =>
+        prev === 0 ? selectedProject.gallery.length - 1 : prev - 1
+      );
+    }
   };
 
   return (
@@ -244,21 +330,58 @@ export default function Portfolio() {
               <X className="w-8 h-8" />
             </button>
 
-            {/* Image Container */}
-            <div className="relative rounded-lg overflow-hidden shadow-2xl mb-6 bg-charcoal-900">
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="w-full h-auto object-cover"
-              />
+            {/* Image Container / Gallery View */}
+            {showGallery ? (
+              <div className="relative rounded-lg overflow-hidden shadow-2xl mb-6 bg-charcoal-900">
+                <img
+                  src={selectedProject.gallery[currentImageIndex]}
+                  alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                  className="w-full h-auto object-cover"
+                />
 
-              {/* Top-right accent */}
-              <div className="absolute top-4 right-4 px-4 py-2 rounded-sm bg-gold-500/90 backdrop-blur-sm">
-                <span className="text-charcoal-900 text-xs font-semibold tracking-widest uppercase">
-                  {selectedProject.category}
-                </span>
+                {/* Gallery Navigation */}
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-900/80 text-white flex items-center justify-center hover:bg-gold-500 transition-colors"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-900/80 text-white flex items-center justify-center hover:bg-gold-500 transition-colors"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+
+                {/* Image Counter */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-charcoal-900/80 text-white text-sm">
+                  {currentImageIndex + 1} / {selectedProject.gallery.length}
+                </div>
+
+                {/* Back to Details Button */}
+                <button
+                  onClick={() => setShowGallery(false)}
+                  className="absolute top-4 left-4 px-4 py-2 rounded-sm bg-gold-500/90 backdrop-blur-sm text-charcoal-900 text-xs font-semibold tracking-widest uppercase hover:bg-gold-600 transition-colors"
+                >
+                  ← Back
+                </button>
               </div>
-            </div>
+            ) : (
+              <div className="relative rounded-lg overflow-hidden shadow-2xl mb-6 bg-charcoal-900">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-auto object-cover"
+                />
+
+                {/* Top-right accent */}
+                <div className="absolute top-4 right-4 px-4 py-2 rounded-sm bg-gold-500/90 backdrop-blur-sm">
+                  <span className="text-charcoal-900 text-xs font-semibold tracking-widest uppercase">
+                    {selectedProject.category}
+                  </span>
+                </div>
+              </div>
+            )}
 
             {/* Details */}
             <div className="bg-white rounded-lg p-8 shadow-xl">
@@ -310,8 +433,12 @@ export default function Portfolio() {
                 >
                   Close
                 </button>
-                <button className="flex-1 px-6 py-3 text-white font-semibold tracking-widest text-sm bg-gold-500 hover:bg-gold-600 transition-colors duration-300 rounded-sm uppercase">
-                  Request Quote
+                <button
+                  onClick={openGallery}
+                  className="flex-1 px-6 py-3 text-white font-semibold tracking-widest text-sm bg-gold-500 hover:bg-gold-600 transition-colors duration-300 rounded-sm uppercase flex items-center justify-center gap-2"
+                >
+                  <Images className="w-4 h-4" />
+                  View Gallery ({selectedProject.gallery.length})
                 </button>
               </div>
             </div>
