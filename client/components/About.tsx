@@ -12,8 +12,11 @@ export default function About() {
               <p className="text-lg text-charcoal-700 leading-relaxed mb-4">
                 Through my experience of 37 years as a Business, Design, and Construction professional, I have found that exceptional results come from exceptional teams.
               </p>
-              <p className="text-lg text-charcoal-700 leading-relaxed">
+              <p className="text-lg text-charcoal-700 leading-relaxed mb-4">
                 My approach is simple: bring together the right people, create an environment built on mutual respect, and stay closely attuned to client feedback throughout every phase of a project.
+              </p>
+              <p className="text-lg text-charcoal-700 leading-relaxed">
+                I've built my career on the universal business principle that quality construction isn't just about meeting standards—it's about exceeding them. By combining rigorous processes with forward-thinking design and fostering a collaborative team culture, excellence is no longer simply a goal, but an inevitable result.
               </p>
               <p className="text-right text-charcoal-600 mt-4 italic">
                 -Michael Chandler
